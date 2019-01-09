@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="true"
+  interval="3000"
+  duration="300"
+>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">清华新闻</view>
+  <view class="weui-panel__bd " wx:for="{{newsMsg}}" wx:if='{{index<3}}'>
+   <view class="weui-panel__hd weui-panel_access">
+    <navigator url="../detail/detail?news_id={{index}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="{{item.imgUrl}}" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">{{item.newsTitle}}</view>
+        <view class="weui-media-box__desc">{{item.newsDes}}</view>
+      </view>
+    </navigator>
+     </view>
+  </view>
+      <navigator open-type='switchTab' url="../article/article">
+      <view class="weui-cell weui-cell_access weui-cell_link">
+      <text class="weui-cell__bd">查看更多</text>
+       <view class="weui-cell__ft weui-cell__ft_in-access"></view>          
+       </view>
+       </navigator>
+</view>

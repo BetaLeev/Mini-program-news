@@ -1,0 +1,23 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1 center">{{newsMsg[articleId].newsTitle}}</view>
+            <view class="weui-article__section">
+                <view class="weui-article__title right">访问:<text class='number'>42</text>次</view>
+                   <view class="weui-article__title right">作者：alice</view>
+                <view class="weui-article__section right">{{newsMsg[articleId].createTime}}</view>
+               <view>
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" src="{{newsMsg[articleId].imgUrl}}" mode="aspectFit" style="height: 180px" />
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                  
+                    <view class="weui-article__p">
+                       {{newsMsg[articleId].newsDes}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

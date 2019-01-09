@@ -1,0 +1,7 @@
+/* pages/login/login.wxss */
+.page{
+  color: #5c3b78;
+}
+button .weui-btn{
+  background-color: #21142c;
+}

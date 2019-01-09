@@ -1,0 +1,18 @@
+{
+  "bannerImgUrl":[
+    "../../images/swiper.jpg",
+    "../../images/swiper2.jpg"
+  ],
+  "News":[
+   {
+    "imgUrl":"",
+    "title:":"",
+    "des":""
+   },
+   {
+    "imgUrl": "",
+    "title:": "",
+    "des": ""
+  }
+  ]
+}

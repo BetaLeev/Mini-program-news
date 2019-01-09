@@ -1,0 +1,30 @@
+@import 'dist/style/weui.wxss';
+
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+
+} 
+.center{
+  text-align: center;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.right{
+ text-align: center;
+ padding-bottom: 3rpx;
+}
+.number{
+  color:red;
+}
+button{
+  color: #21142c;
+}

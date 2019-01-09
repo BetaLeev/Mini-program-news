@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/detail/detail",
+    "pages/article/article",
+    "pages/brief/brief",
+    "pages/about/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "pink",
+    "navigationBarTitleText": "欢迎来访",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#21142c",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath": "images/icon_component.png",
+        "selectedIconPath": "images/icon_component_HL.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/brief.jpg",
+        "selectedIconPath": "images/brieff.jpg",
+        "pagePath": "pages/brief/brief",
+        "text": "学校概况"
+      },
+      {
+        "iconPath": "images/icon_API_news.jpg",
+        "selectedIconPath": "images/news.jpg",
+        "pagePath": "pages/article/article",
+        "text": "新闻动态"
+      },
+      {
+        "iconPath": "images/icon_ts.jpg",
+        "selectedIconPath": "images/ic-ts.jpg",
+        "pagePath": "pages/about/index",
+        "text": "走进清华"
+      },
+      {
+        "iconPath": "images/icon_API.png",
+        "selectedIconPath": "images/icon_API_HL.png",
+        "pagePath": "pages/login/login",
+        "text": "我的"
+      }
+    ]
+  }
+}

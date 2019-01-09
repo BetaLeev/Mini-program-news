@@ -1,0 +1,29 @@
+   <view class="page__hd">
+        <view class="page__title center">新闻资讯列表</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">当前全部新闻</view>
+            <view class="weui-panel__bd" wx:for="{{newsMsg}}">
+                <navigator url="../detail/detail?news_id={{index}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{item.imgUrl}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.newsTitle}}</view>
+                        <view class="weui-media-box__desc">{{item.newsDes}}</view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="weui-panel__ft">
+                <view class="weui-cell weui-cell_access weui-cell_link">
+                    
+
+                </view>
+                 <view class="weui-loadmore">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+            </view>
+        </view>
+        </view>

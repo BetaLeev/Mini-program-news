@@ -1,0 +1,20 @@
+<view class='page'>
+  <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__hd center page__title">学校概括</view>
+  </view>
+  <view class="weui-article__p weui-panel__hd" wx:for='{{brief}}'>
+  <view class="page__bd page__bd_spacing">
+  <image class="weui-article__img" src="{{item.url}}" mode="aspectFit" style="height: 180px" /> 
+   <view class="page__desc center">
+    <view class="page__title">
+    {{item.title}}
+  
+   </view>   
+    <view class="page__desc">
+  {{item.content}}
+    
+   </view>   
+   </view>    
+  </view>
+</view>
+</view>
